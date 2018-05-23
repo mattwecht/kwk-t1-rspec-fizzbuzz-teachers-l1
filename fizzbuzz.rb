@@ -1,15 +1,13 @@
 def fizzbuzz (int)
+  if int %5 == 0 && int %3 == 0
+    return "FizzBuzz"
+  end
   if int % 3 == 0 # if the number int is divisible by 3
-     "Fizz" # Go fizz
+    return "Fizz" # Go fizz
   end
   if int % 5 == 0
-  "Buzz"
-  end
-  if int %5 == 0 && int %3 == 0
-    "FizzBuzz"
-  end
+  return "Buzz"
 else
-  nil
-end
+  return nil
 end
 end
